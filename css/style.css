@@ -13,56 +13,59 @@ body {
     
     font-family: 'PT Sans', sans-serif;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
     
-    .container {
-        display: flex;
-        flex-direction: column;
-        
-        min-width: 1340px; /* 1340px */
-        min-height: 870px; /* 870px */
-        
-        border: 0.063em solid #000000;
-        border-radius: 2.50em;
-    }
+    min-width: 1340px; /* 1340px */
+    min-height: 870px; /* 870px */
     
-    .itens {
-        display: flex;
+    border: 0.063em solid #000000;
+    border-radius: 2.50em;
+}
 
-        min-width: 1340px; /* 1340px */
-        min-height: 870px; /* 870px */
-        border-radius: 2.50em;
-        background-color: white;
-    }
-
-    .barra-lateral-esquerda {
-        min-width: 50%;
-        min-height: 100%;
-    }
+.itens {
+    display: flex;
     
-    .navbar-esquerda {
-        display: flex;
-        align-items: center;
-        
-        margin-top: 45px; /* 45px */
-        margin-left: 55px; /* 55 px */
-    }
+    min-width: 1340px; /* 1340px */
+    min-height: 870px; /* 870px */
+    border-radius: 2.50em;
+    background-image: url("/img/bg-barra-lateral-direita.png");
+}
 
-    .navbar-esquerda a {
-        text-decoration: none;
-        color: black;
-        
-        margin-left: 50px; /* 50 px */
-    }
+.barra-lateral-esquerda {
+    min-width: 50%;
+    min-height: 100%;
+
+    border-radius: 2.50em 0 0 2.50em;
+    background-color: white;
+}
+
+.navbar-esquerda {
+    display: flex;
+    align-items: center;
     
-    .navbar-esquerda .title {
-        font-size: 28px;
-        font-weight: 700;
-    }
+    margin-top: 45px; /* 45px */
+    margin-left: 55px; /* 55 px */
+}
 
-    .title-login {
-        margin-top: 180px;
+.navbar-esquerda a {
+    text-decoration: none;
+    color: black;
+    
+    margin-left: 50px; /* 50 px */
+}
 
-        font-size: 40px;
+.navbar-esquerda .title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.title-login {
+    margin-top: 180px;
+    
+    font-size: 40px;
         font-weight: 700;
         text-align: center;
     }
@@ -191,6 +194,8 @@ body {
 
         padding-bottom: 5px;
         border-bottom: 1px solid #000000;
+
+        margin-bottom: 20px;
     }
 
     .look-pass-img {
@@ -289,19 +294,19 @@ body {
         text-decoration: none;
         color: black;
         font-weight: 700;
+
     }
     
 .footer-itens {
     margin-top: 90px;
     margin-left: 70px;
-}
-
-.footer-itens a {
     font-weight: 700;
 }
 
-.bg {
-        
-    width: 10px;
-    height: 10px;
- }
+.footer-itens a {
+    margin-left: 3px;
+    margin-right: 3px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
